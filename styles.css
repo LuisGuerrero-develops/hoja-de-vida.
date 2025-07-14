@@ -148,3 +148,20 @@ section {
     font-weight: 700;
     color: #555;
 }
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+
+    .no-imprimir {
+        display: none !important;
+    }
+}
